@@ -1,0 +1,21 @@
+{
+  "name": "Real Ubuntu Desktop Cloud PC",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postCreateCommand": "docker run -d --name real-ubuntu-pc --restart always -p 8443:8443 -e DISPLAY_WIDTH=1920 -e DISPLAY_HEIGHT=1080 kasmtech/desktop:1.14.0",
+  "forwardPorts": [
+    8443
+  ],
+  "portsAttributes": {
+    "8443": {
+      "label": "Ubuntu Desktop Web Interface",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
