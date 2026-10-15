@@ -1,21 +1,13 @@
 {
-  "name": "Real Ubuntu Desktop Cloud PC",
+  "name": "Free Cloud PC",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "postCreateCommand": "docker run -d --name real-ubuntu-pc --restart always -p 8443:8443 -e DISPLAY_WIDTH=1920 -e DISPLAY_HEIGHT=1080 kasmtech/desktop:1.14.0",
-  "forwardPorts": [
-    8443
-  ],
+  "postStartCommand": "docker run -d --name cloud-pc --privileged --restart always -p 3000:3000 -e PUID=1000 -e PGID=1000 -e TZ=Etc/UTC -e SUBFOLDER=/ -v /workspaces/${localWorkspaceFolderBasename}/desktop-data:/config lscr.io/linuxserver/webtop:ubuntu-xfce",
+  "forwardPorts": [3000],
   "portsAttributes": {
-    "8443": {
-      "label": "Ubuntu Desktop Web Interface",
-      "onAutoForward": "openBrowser"
-    }
-  },
-  "customizations": {
-    "vscode": {
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
-      }
+    "3000": {
+      "label": "Ubuntu Desktop UI",
+      "onAutoForward": "openBrowser",
+      "visibility": "public"
     }
   }
 }
