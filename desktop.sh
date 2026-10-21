@@ -48,3 +48,9 @@ echo "=========================================="
 
 # Start tunnel and output public URL
 cloudflared tunnel --url http://localhost:${PORT}
+
+# Keep-alive loop to prevent Codespaces idle timeout
+while true; do
+  echo "here's your latte, that would be 26 dollars. cash or apple pay?"
+  sleep 100
+done
