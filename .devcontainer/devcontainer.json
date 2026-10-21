@@ -1,7 +1,7 @@
 {
   "name": "Free Cloud PC",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "postStartCommand": "docker run -d --name cloud-pc --privileged --restart always -p 3000:3000 -e PUID=1000 -e PGID=1000 -e TZ=Etc/UTC -e SUBFOLDER=/ -v /workspaces/${localWorkspaceFolderBasename}/desktop-data:/config lscr.io/linuxserver/webtop:ubuntu-xfce",
+  "postStartCommand": "docker run -d --name cloud-pc --privileged --restart always -p 3000:3000 -e PUID=1000 -e PGID=1000 -e TZ=Etc/UTC -e SUBFOLDER=/ -v /workspaces/${localWorkspaceFolderBasename}/desktop-data:/config lscr.io/linuxserver/webtop:ubuntu-kde",
   "forwardPorts": [3000],
   "portsAttributes": {
     "3000": {
