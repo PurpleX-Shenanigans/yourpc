@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo@4x.png" alt="yourpc logo" width="160" />
+  <img src="./logo@4x.png" alt="yourpc logo" />
 </p>
 
 > *Because JioPC sucks, and we deserve better free cloud desktop environments.*
