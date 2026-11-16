@@ -1,7 +1,6 @@
 <p align="center">
   <img src="./logo@4x.png" alt="yourpc logo" />
 </p>
-
 > *Because JioPC sucks, and we deserve better free cloud desktop environments.*
 
 `yourpc` is a lightweight, disposable, containerized Linux desktop (KDE Plasma) that runs seamlessly inside GitHub Codespaces and streams directly to your browser over secure Cloudflare Tunnels.
@@ -47,7 +46,7 @@ Follow these simple steps to spin up your browser-based Cloud PC in under 2 minu
 
 ## 📌 Important Notes
 
-* **Disposable Workspaces:** This is an ephemeral, throwaway environment. No state or file progress is saved once the Codespace is shut down or deleted.
+* **Disposable Workspaces:** These workspaces are meant to be disposable; just delete desktop-data to start a fresh workspace
 * **Inactivity Shutdowns:** GitHub Codespaces automatically puts idle environments to sleep after a period of inactivity.
 
 ---
