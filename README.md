@@ -1,4 +1,6 @@
-# 🖥️ yourpc
+<p align="center">
+  <img src="./logo@4x.png" alt="yourpc logo" width="160" />
+</p>
 
 > *Because JioPC sucks, and we deserve better free cloud desktop environments.*
 
