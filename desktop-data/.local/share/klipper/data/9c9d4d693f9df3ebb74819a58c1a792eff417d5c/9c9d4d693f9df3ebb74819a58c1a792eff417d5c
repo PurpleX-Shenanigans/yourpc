@@ -1,5 +1,0 @@
-5. **Start Desktop Session**  
-   Open the VS Code terminal inside Codespaces and run:
-   ```bash
-   ./startup.sh
-   ```
