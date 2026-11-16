@@ -28,7 +28,7 @@ Follow these simple steps to spin up your browser-based Cloud PC in under 2 minu
 5. **Start Desktop Session**  
    Open the VS Code terminal inside Codespaces and run:
    ```bash
-   ./desktop.sh
+   ./startup.sh
    ```
 
 6. **Connect via Cloudflare**  
@@ -43,6 +43,12 @@ Follow these simple steps to spin up your browser-based Cloud PC in under 2 minu
 
 * **Disposable Workspaces:** This is an ephemeral, throwaway environment. No state or file progress is saved once the Codespace is shut down or deleted.
 * **Inactivity Shutdowns:** GitHub Codespaces automatically puts idle environments to sleep after a period of inactivity.
+* **Save Progress**  
+   Open the VS Code terminal inside Codespaces and run:
+   ```bash
+   ./save.sh
+   ```
+
 
 ---
 
