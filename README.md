@@ -14,14 +14,14 @@ Follow these simple steps to spin up your browser-based Cloud PC in under 2 minu
    Make sure you have an active [GitHub account](https://github.com).
 
 2. **Fork the Repository**  
-   Fork this repository to your own account by clicking the **Fork** button at the top right (or rename it to whatever you like).
+   Fork this repository to your own account by clicking the **Fork** button at the top right (btw, you can rename it to whatever you like).
 
 3. **Launch Codespace**  
    In your forked repository:
    * Click the green **Code** button.
    * Switch to the **Codespaces** tab.
    * Click **Create codespace on main**.
-
+   
 4. **Initialize Container**  
    Wait a minute for GitHub Codespaces to finish building the environment container.
 
@@ -30,7 +30,11 @@ Follow these simple steps to spin up your browser-based Cloud PC in under 2 minu
    ```bash
    ./startup.sh
    ```
-
+   * You may agree to save; else open a new terminal (Ctrl+Shift+C and run 
+   ```bash
+   ./save.sh
+   ``` 
+   and then select from there)
 6. **Connect via Cloudflare**  
    * Wait for the script execution to output the generated `https://xxxx.trycloudflare.com` URL.
    * Open the link in any web browser and log in with the default credentials:
@@ -43,12 +47,6 @@ Follow these simple steps to spin up your browser-based Cloud PC in under 2 minu
 
 * **Disposable Workspaces:** This is an ephemeral, throwaway environment. No state or file progress is saved once the Codespace is shut down or deleted.
 * **Inactivity Shutdowns:** GitHub Codespaces automatically puts idle environments to sleep after a period of inactivity.
-* **Save Progress**  
-   Open the VS Code terminal inside Codespaces and run:
-   ```bash
-   ./save.sh
-   ```
-
 
 ---
 
